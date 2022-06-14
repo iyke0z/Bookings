@@ -22,6 +22,7 @@ func routes(app *config.AppConfig) http.Handler{
 	//CSRF Middle ware created by me to load session
 	mux.Use(SessionLoad)
 
+	//ROUTES
 	mux.Get("/", handlers.Repo.Home)
 	mux.Get("/about", handlers.Repo.About)
 
