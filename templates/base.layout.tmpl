@@ -1,0 +1,16 @@
+{{define "base"}}
+    <!doctype html>
+    <html lang="en">
+        <head>
+            {{block "css" .}}
+            {{end }}
+        </head>
+        <body>
+            {{block "content" .}}
+            {{end}}
+
+            {{block "js" .}}
+            {{end}}
+        </body>
+    </html>
+{{end}}
